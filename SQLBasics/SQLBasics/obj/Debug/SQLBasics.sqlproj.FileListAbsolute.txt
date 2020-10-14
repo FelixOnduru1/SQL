@@ -1,0 +1,6 @@
+C:\Users\WORLDCOLE\source\repos\FelixOnduru1\SQL\SQLBasics\SQLBasics\bin\Debug\SQLBasics.dacpac
+C:\Users\WORLDCOLE\source\repos\FelixOnduru1\SQL\SQLBasics\SQLBasics\bin\Debug\SQLBasics.dll
+C:\Users\WORLDCOLE\source\repos\FelixOnduru1\SQL\SQLBasics\SQLBasics\bin\Debug\SQLBasics.pdb
+C:\Users\WORLDCOLE\source\repos\FelixOnduru1\SQL\SQLBasics\SQLBasics\obj\Debug\SQLBasics.dll
+C:\Users\WORLDCOLE\source\repos\FelixOnduru1\SQL\SQLBasics\SQLBasics\obj\Debug\SQLBasics.pdb
+C:\Users\WORLDCOLE\source\repos\FelixOnduru1\SQL\SQLBasics\SQLBasics\obj\Debug\SQLBasics.sqlprojAssemblyReference.cache
