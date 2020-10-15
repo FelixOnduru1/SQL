@@ -15,7 +15,7 @@ FROM Dimension.City
 SELECT *
 FROM Dimension.City
 
-/*The following code only selects 10 rows*/
+/*The following code only selects first 10 rows*/
 SELECT TOP 10 Country
 City,
 [State Province]
