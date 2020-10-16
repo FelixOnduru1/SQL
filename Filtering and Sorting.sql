@@ -40,7 +40,7 @@ FROM Dimension.Supplier
 WHERE Supplier IS NULL
 
 /*ADVANCED FILTERING*/
-/*A. IN Operator i.e retrieving specifically for purchase keys 140, 172 and 187*/
+/*IN Operator i.e retrieving specifically for purchase keys 140, 172 and 187*/
 SELECT [Purchase Key],
 [Supplier Key],
 [Ordered Quantity]
