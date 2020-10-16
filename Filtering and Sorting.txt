@@ -1,0 +1,6 @@
+# Filtering, Sorting and Calculating Data with SQL
+Some of the benefits of filtering and sorting include:
+1. Narrowing the data to what you want to retrieve.
+2. Allows for specific analysis.
+3. Increase query performance and speed.
+4. Reduce stress on client application.
