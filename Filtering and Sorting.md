@@ -9,9 +9,9 @@ The WHERE clause is mostly used for filtering.
  It does so by using operators such as =, <>, >, <, >=, <=, BETWEEN, IS NULL.
  ## Advanced Filtering: IN, OR, AND, NOT
  The IN operator is used to retrieve specific values.
- The OR operator turns all entries from two conditions.
+ The OR operator returns all entries from two conditions.
  The OR operator and IN operator are almost similar but IN is much faster and can be used with a long list of options.
  The AND operator combines two conditions.
  Remember to use parantheses when you want to order evaluations between OR and AND.
- Using parantheses implies AND will be evaluated firts, otherwise OR will be evaluated first.
+ Using parantheses implies AND will be evaluated first, otherwise OR will be evaluated first.
  NOT operator is used to add condition to remove a particular value.
