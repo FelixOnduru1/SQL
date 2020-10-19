@@ -86,3 +86,68 @@ Country,
 City
 FROM Dimension.City
 WHERE NOT [State Province] = 'Georgia' AND NOT City = 'Carrollton'
+
+/*Wildcards*/
+/*Matching a single character*/
+SELECT Employee
+FROM Dimension.Employee
+WHERE Employee LIKE 'Amy Tref_'
+
+/*Matching anything that starts with a particular phrase*/
+SELECT Employee
+FROM Dimension.Employee
+WHERE Employee LIKE 'Stella Rose%'
+
+/*Matching anything that ends with a particular phrase*/
+SELECT Employee
+FROM Dimension.Employee
+WHERE Employee LIKE '%Rosenhain'
+
+/*Matching anything with a particular phrase in the middle*/
+SELECT Employee
+FROM Dimension.Employee
+WHERE Employee LIKE '%Rose%'
+
+/*Matching anything in a case where you know the beginning and the end*/
+SELECT Employee
+FROM Dimension.Employee
+WHERE Employee LIKE 'Stella%hain'
+
+/*Sorting with ORDER BY*/
+/*Sorting by the column position i.e orders the column Employee alphabetically*/
+SELECT Employee,
+[Preferred Name],
+[Employee Key]
+FROM Dimension.Employee
+ORDER BY 1
+/*Sorting in either ascending or descending order*/
+SELECT Employee,
+[Preferred Name],
+[Employee Key]
+FROM Dimension.Employee
+ORDER BY [Employee Key] DESC
+
+/*Using GROUP BY to select sales territories for each state province*/
+SELECT COUNT([Sales Territory]) AS num_sales_territories,
+[State Province]
+FROM Dimension.City
+GROUP BY [State Province]
+
+/*HAVING clause to implement conditions for grouped data*/
+SELECT COUNT([Sales Territory]) AS num_sales_territories,
+[State Province]
+FROM Dimension.City
+GROUP BY [State Province]
+HAVING COUNT([Sales Territory]) >= 2000
+
+/*Combining all clauses*/
+SELECT [State Province],
+COUNT([Sales Territory]) AS num_sales_territories
+FROM Dimension.City
+WHERE  [State Province] IN ('Texas', 'New York', 'California')
+GROUP BY [State Province]
+HAVING COUNT([Sales Territory]) >= 2000
+ORDER BY COUNT([Sales Territory]) DESC
+
+
+
