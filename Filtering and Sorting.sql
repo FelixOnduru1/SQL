@@ -3,7 +3,7 @@ SELECT (culumns)
 FROM (table)
 WHERE (operator)*/
 
-/* Filtering on a single condition i.e filtering Contoso Ltd. from all the suppliers.
+/* Filtering on a single condition that is filtering Contoso Ltd. from all the suppliers.
 Double quotes used for strings that are not values.*/
 SELECT Supplier,
 Category,
